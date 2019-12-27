@@ -9,7 +9,8 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <Authentication setUserInfo={this.props.setUserInfo}/>
+            <Authentication setUserInfo={this.props.setUserInfo}
+            isSignedIn={this.props.isSignedIn}/>
         );
     }
 }

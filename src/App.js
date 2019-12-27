@@ -13,9 +13,9 @@ export default class App extends React.Component {
         this.setUserInfo = this.setUserInfo.bind(this);
     }
 
-    setUserInfo(username, token) {
+    setUserInfo(username, token, isSigningIn) {
         this.setState({
-                isSignedIn: true,
+                isSignedIn: isSigningIn,
                 username: username,
                 token: token
             }

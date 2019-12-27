@@ -30,7 +30,7 @@ export default class SignUp extends React.Component {
             email: this.state.email
         })
             .then((response) => {
-                this.props.setUserInfo(response.data.user.username, response.data.token)
+                this.props.setUserInfo(response.data.user.username, response.data.token, true)
             }, (error) => {
                 console.log(error)
             });
