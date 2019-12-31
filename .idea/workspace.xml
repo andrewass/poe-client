@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a8c63b-ce88-46d6-b8f2-9bb59c990d69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/ItemSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/TradeItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/TradeItemList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/Authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authentication/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/SignIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\components\body" />
       <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\components\authentication" />
     </key>
   </component>
@@ -86,7 +93,10 @@
       <updated>1577386034007</updated>
       <workItem from="1577386038270" duration="2001000" />
       <workItem from="1577388104587" duration="4423000" />
-      <workItem from="1577441616888" duration="13666000" />
+      <workItem from="1577441616888" duration="13971000" />
+      <workItem from="1577570194585" duration="8171000" />
+      <workItem from="1577725368527" duration="1790000" />
+      <workItem from="1577795324850" duration="20994000" />
     </task>
     <servers />
   </component>
@@ -102,22 +112,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577387272825" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1577471430904">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1577817753736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577471430904" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1577471430889">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1577817753736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577471430889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1577471430889">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1577817753736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577471430889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1577471430889">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1577817753736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577471430889" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
     <state x="349" y="156" key="IDE.errors.dialog" timestamp="1577446309245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -126,9 +136,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" width="1218" height="712" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577442362154" />
-    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1577466901276">
+    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1577617036074">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577466901276" />
+    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577617036074" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/body/ItemSearch.js</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/body/ItemSearch.js</url>
+          <line>37</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

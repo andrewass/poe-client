@@ -1,4 +1,10 @@
 import React from "react";
+import axios from "axios";
+
+
+const URL = {
+    sign_in: "http://localhost:8080/sign-in"
+}
 
 export default class SignIn extends React.Component {
 
@@ -9,22 +15,31 @@ export default class SignIn extends React.Component {
             password: ""
         };
         this.changeHandler = this.changeHandler.bind(this);
-        this.submitHandler = this.submitHandler.bind(this);
+        this.postSignInToServer = this.postSignInToServer.bind(this);
     }
 
     changeHandler(event) {
         this.setState({[event.target.name]: event.target.value});
     }
 
-    submitHandler(event) {
+    postSignInToServer(event) {
         event.preventDefault();
+        axios.post(URL.sign_in, {
+            username: this.state.username,
+            password: this.state.password
+        })
+            .then((response) => {
+                this.props.setUserInfo(response.data.user.username, response.data.token, true)
+            }, (error) => {
+                console.log(error)
+            });
     }
 
     render() {
         return (
             <div>
                 <h3>Sign In</h3>
-                <form onSubmit={this.submitHandler}>
+                <form onSubmit={this.postSignInToServer}>
                     <label> Username :
                         <input name="username" type="text" onChange={this.changeHandler}/>
                     </label><br/>

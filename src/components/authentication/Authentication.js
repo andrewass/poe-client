@@ -1,8 +1,13 @@
 import React from "react";
+import axios from "axios";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import {NavTab} from "react-router-tabs";
 import {BrowserRouter as Router, Route} from "react-router-dom";
+
+const URL = {
+    sign_out: "http://localhost:8080/sign-out"
+}
 
 export default class Authentication extends React.Component {
 
@@ -11,9 +16,17 @@ export default class Authentication extends React.Component {
         this.signOutUser = this.signOutUser.bind(this)
     }
 
-    signOutUser(){
-        this.props.setUserInfo("","",false)
+    signOutUser() {
+        axios.post(URL.sign_out, {
+            token: this.props.token,
+            username: this.props.username
+        }).then(() => {
+            this.props.setUserInfo("", "", false);
+        }, (error) => {
+            console.log(error)
+        });
     }
+
 
     render() {
         if (this.props.isSignedIn) {

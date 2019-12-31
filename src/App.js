@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/header/Header";
+import Body from "./components/body/Body";
 
 export default class App extends React.Component {
 
@@ -30,8 +31,8 @@ export default class App extends React.Component {
                         token={this.state.token}
                         isSignedIn={this.state.isSignedIn}/>
                 <h1>Username is {this.state.username}</h1>
-                <h1>Email is {this.state.email}</h1>
                 <h1>Token is {this.state.token}</h1>
+                <Body/>
             </div>
         );
     }
