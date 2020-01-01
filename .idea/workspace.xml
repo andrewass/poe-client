@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a8c63b-ce88-46d6-b8f2-9bb59c990d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/body/ItemSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/body/TradeItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/body/TradeItemList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/Authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/TradeItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/TradeItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -96,7 +88,7 @@
       <workItem from="1577441616888" duration="13971000" />
       <workItem from="1577570194585" duration="8171000" />
       <workItem from="1577725368527" duration="1790000" />
-      <workItem from="1577795324850" duration="20994000" />
+      <workItem from="1577795324850" duration="24780000" />
     </task>
     <servers />
   </component>
@@ -112,22 +104,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577387272825" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1577817753736">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1577829420886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1577817753736">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577829420886" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1577829420886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1577817753736">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577829420886" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1577829420886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1577817753736">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577829420886" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1577829420886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577817753736" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577829420886" />
     <state x="349" y="156" key="IDE.errors.dialog" timestamp="1577446309245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

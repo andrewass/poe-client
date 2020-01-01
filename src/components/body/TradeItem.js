@@ -9,8 +9,9 @@ export default class TradeItem extends React.Component {
     render() {
         return (
             <div>
-            <h4>{this.props.item.name}</h4>
-                <img src={this.props.item.imageUrl} alt={this.props.item.name} />
+                <h4>{this.props.item.name}</h4>
+                <img src={this.props.item.imageUrl} alt={this.props.item.name}/>
+                <h5>{this.props.item.currencyAmount} {this.props.item.currency}</h5>
             </div>
         );
     }
