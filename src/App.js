@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Body from "./components/body/Body";
+import "./stylesheet/App.css"
 
 export default class App extends React.Component {
 
@@ -25,7 +26,7 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="background">
                 <Header setUserInfo={this.setUserInfo}
                         username={this.state.username}
                         token={this.state.token}
