@@ -2,11 +2,13 @@ import React from "react";
 import axios from "axios";
 import Select from "react-select";
 import TradeItemList from "./TradeItemList";
+import AutoComplete from "./AutoComplete";
 
 
 const URL = {
     trade_items: "http://localhost:8080/poe/trade-items",
-    leagues: "http://localhost:8080/poe/leagues"
+    leagues: "http://localhost:8080/poe/leagues",
+    items: "http://localhost:8080/poe/items"
 };
 
 export default class ItemSearch extends React.Component {
@@ -17,21 +19,45 @@ export default class ItemSearch extends React.Component {
             itemName: "",
             league: "",
             tradeItems: [],
-            leagues: []
+            leagues: [],
+            items: []
         };
         this.searchForTradeItems = this.searchForTradeItems.bind(this);
-        this.changeHandler = this.changeHandler.bind(this);
+        this.setItemName = this.setItemName.bind(this);
         this.fillLeagueList = this.fillLeagueList.bind(this);
+        this.fillItemList = this.fillItemList.bind(this);
         this.handleOptionChange = this.handleOptionChange.bind(this);
     }
 
     componentDidMount() {
+        this.fetchLeagues();
+        this.fetchItems();
+    }
+
+    fetchLeagues() {
         axios.get(URL.leagues)
             .then((response) => {
                 this.fillLeagueList(response.data)
             }, (error) => {
                 console.log(error);
             });
+    }
+
+    fetchItems() {
+        axios.get(URL.items)
+            .then((response) => {
+                this.fillItemList(response.data)
+            }, (error) => {
+                console.log(error);
+            });
+    }
+
+    fillItemList(items) {
+        let itemList = [];
+        for (let i in items) {
+            itemList.push(items[i].itemName);
+        }
+        this.setState({items: itemList});
     }
 
     fillLeagueList(leagues) {
@@ -58,8 +84,8 @@ export default class ItemSearch extends React.Component {
             });
     }
 
-    changeHandler(event) {
-        this.setState({[event.target.name]: event.target.value});
+    setItemName(selectedItemName) {
+        this.setState({itemName: selectedItemName});
     }
 
     handleOptionChange(selectedOption) {
@@ -69,16 +95,16 @@ export default class ItemSearch extends React.Component {
     render() {
         return (
             <div>
-                <TradeItemList tradeItems={this.state.tradeItems}/>
                 <form onSubmit={this.searchForTradeItems}>
                     <label> League :
                         <Select className="dropdown" options={this.state.leagues} onChange={this.handleOptionChange}/>
                     </label>
                     <label> Item Name :
-                        <input name="itemName" type="text" onChange={this.changeHandler}/>
+                        <AutoComplete items={this.state.items} setItemName={this.setItemName}/>
                     </label><br/>
                     <input name="submit" type="submit"/>
                 </form>
+                <TradeItemList tradeItems={this.state.tradeItems}/>
             </div>
         );
     }
