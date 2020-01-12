@@ -94,7 +94,7 @@ export default class ItemSearch extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="searchForm">
                 <form onSubmit={this.searchForTradeItems}>
                     <label> League :
                         <Select className="dropdown" options={this.state.leagues} onChange={this.handleOptionChange}/>

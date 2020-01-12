@@ -31,8 +31,6 @@ export default class App extends React.Component {
                         username={this.state.username}
                         token={this.state.token}
                         isSignedIn={this.state.isSignedIn}/>
-                <h1>Username is {this.state.username}</h1>
-                <h1>Token is {this.state.token}</h1>
                 <Body/>
             </div>
         );

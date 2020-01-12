@@ -49,7 +49,8 @@ export default class AutoComplete extends React.Component {
         if (this.shouldShowSuggestions) {
             return (
                 <ul>
-                    {this.state.filteredItems.map((item, index) => {
+                    {this.state.filteredItems.slice(0, Math.min(this.state.filteredItems.length, 8))
+                        .map((item, index) => {
                         return (
                             <li onClick={this.onClick}>{item}</li>
                         );

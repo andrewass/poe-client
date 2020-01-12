@@ -10,8 +10,8 @@ export default class TradeItemList extends React.Component {
     render() {
         return (
             <div>
-                {this.props.tradeItems.map((tradeItem) =>
-                    <TradeItem item={tradeItem} />)}
+                {this.props.tradeItems
+                    .map((tradeItem) => <TradeItem item={tradeItem}/>)}
             </div>
         );
     }
