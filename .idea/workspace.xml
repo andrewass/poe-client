@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a8c63b-ce88-46d6-b8f2-9bb59c990d69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/MenuBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/background-img.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/AutoComplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/AutoComplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authentication/Authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authentication/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/authentication/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/SignUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/ItemSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/ItemSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/TradeItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/TradeItemList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheet/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheet/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +43,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -55,13 +59,14 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andreas\Documents\poe-client\src\components\body" />
       <recent name="C:\Users\andreas\IdeaProjects\poe-client\src" />
       <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\components\body" />
       <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\components\authentication" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andreas\IdeaProjects\poe-client\src\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -114,7 +119,12 @@
       <workItem from="1578593733415" duration="6961000" />
       <workItem from="1578698301761" duration="244000" />
       <workItem from="1578764240642" duration="2266000" />
-      <workItem from="1578820250448" duration="4049000" />
+      <workItem from="1578820250448" duration="7228000" />
+      <workItem from="1578941692463" duration="4498000" />
+      <workItem from="1579023254803" duration="5407000" />
+      <workItem from="1579109125982" duration="4972000" />
+      <workItem from="1579279029491" duration="610000" />
+      <workItem from="1579367867529" duration="1201000" />
     </task>
     <servers />
   </component>
@@ -134,30 +144,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577387272825" />
-    <state x="92" y="92" width="2376" height="1256" key="DiffContextDialog" timestamp="1578765000472">
+    <state x="92" y="92" width="2376" height="1256" key="DiffContextDialog" timestamp="1578942140890">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="92" y="92" width="2376" height="1256" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1578765000472" />
-    <state width="2517" height="410" key="GridCell.Tab.0.bottom" timestamp="1578765585402">
+    <state x="92" y="92" width="2376" height="1256" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1578942140890" />
+    <state width="2517" height="410" key="GridCell.Tab.0.bottom" timestamp="1579118771357">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577871711396" />
-    <state width="2517" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1578765585402" />
-    <state width="2517" height="410" key="GridCell.Tab.0.center" timestamp="1578765585402">
+    <state width="2517" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1579118771357" />
+    <state width="2517" height="410" key="GridCell.Tab.0.center" timestamp="1579118771357">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577871711395" />
-    <state width="2517" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1578765585402" />
-    <state width="2517" height="410" key="GridCell.Tab.0.left" timestamp="1578765585401">
+    <state width="2517" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1579118771357" />
+    <state width="2517" height="410" key="GridCell.Tab.0.left" timestamp="1579118771357">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577871711394" />
-    <state width="2517" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1578765585401" />
-    <state width="2517" height="410" key="GridCell.Tab.0.right" timestamp="1578765585402">
+    <state width="2517" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1579118771357" />
+    <state width="2517" height="410" key="GridCell.Tab.0.right" timestamp="1579118771357">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577871711396" />
-    <state width="2517" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1578765585402" />
+    <state width="2517" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1579118771357" />
     <state x="349" y="156" key="IDE.errors.dialog" timestamp="1577446309245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -166,11 +176,11 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1064" y="430" key="RollbackChangesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1578764662286" />
-    <state x="462" y="98" width="1218" height="712" key="SettingsEditor" timestamp="1578415660433">
+    <state x="462" y="98" width="1715" height="1105" key="SettingsEditor" timestamp="1578945607743">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="277" y="56" width="1218" height="712" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577442362154" />
-    <state x="462" y="98" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1578415660433" />
+    <state x="462" y="98" width="1715" height="1105" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1578945607743" />
     <state x="1080" y="424" key="VCS.ChangeListViewerDialog" timestamp="1578602563934">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

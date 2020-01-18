@@ -13,11 +13,6 @@ export default class Header extends React.Component {
         return (
             <div className="header">
                 <img className="headerImage" src={Logo} alt="poe logo"/>
-                <br/>
-                <Authentication setUserInfo={this.props.setUserInfo}
-                                isSignedIn={this.props.isSignedIn}
-                                username={this.props.username}
-                                token={this.props.token}/>
             </div>
         );
     }
