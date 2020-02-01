@@ -1,5 +1,5 @@
 import React from "react";
-
+import {TextStyle} from "../../styles/styles";
 
 export default class AutoComplete extends React.Component {
 
@@ -52,7 +52,7 @@ export default class AutoComplete extends React.Component {
                     {this.state.filteredItems.slice(0, Math.min(this.state.filteredItems.length, 8))
                         .map((item, index) => {
                         return (
-                            <li onClick={this.onClick}>{item}</li>
+                            <li style={TextStyle} onClick={this.onClick}>{item}</li>
                         );
                     })}
                 </ul>

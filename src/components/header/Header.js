@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../images/poe-logo.png";
-import "../../stylesheet/App.css"
+import "../../styles/App.css"
 import Authentication from "../authentication/Authentication";
 
 export default class Header extends React.Component {

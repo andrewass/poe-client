@@ -3,13 +3,15 @@ import axios from "axios";
 import Select from "react-select";
 import TradeItemList from "./TradeItemList";
 import AutoComplete from "./AutoComplete";
-
+import {TextStyle} from "../../styles/styles";
 
 const URL = {
     trade_items: "http://localhost:8080/poe/trade-items",
     leagues: "http://localhost:8080/poe/leagues",
-    items: "http://localhost:8080/poe/items"
+    items: "http://localhost:8080/poe/items",
+    currencies: "http://localhost:8080/poe/static-items"
 };
+
 
 export default class ItemSearch extends React.Component {
 
@@ -20,18 +22,21 @@ export default class ItemSearch extends React.Component {
             league: "",
             tradeItems: [],
             leagues: [],
-            items: []
+            items: [],
+            currencies: []
         };
         this.searchForTradeItems = this.searchForTradeItems.bind(this);
         this.setItemName = this.setItemName.bind(this);
         this.fillLeagueList = this.fillLeagueList.bind(this);
         this.fillItemList = this.fillItemList.bind(this);
+        this.fetchCurrency = this.fetchCurrency.bind(this);
         this.handleOptionChange = this.handleOptionChange.bind(this);
     }
 
     componentDidMount() {
         this.fetchLeagues();
         this.fetchItems();
+        this.fetchCurrency();
     }
 
     fetchLeagues() {
@@ -52,6 +57,15 @@ export default class ItemSearch extends React.Component {
             });
     }
 
+    fetchCurrency() {
+        axios.get(URL.currencies)
+            .then((response) => {
+                this.setState({currencies: response.data})
+            }, (error) => {
+                console.log(error);
+            });
+    }
+
     fillItemList(items) {
         let itemList = [];
         for (let i in items) {
@@ -65,7 +79,8 @@ export default class ItemSearch extends React.Component {
         for (let i in leagues) {
             leagueList.push({
                 value: leagues[i].name,
-                label: leagues[i].name
+                label: leagues[i].name,
+                color: "black"
             });
         }
         this.setState({leagues: leagueList});
@@ -96,15 +111,13 @@ export default class ItemSearch extends React.Component {
         return (
             <div className="searchForm">
                 <form onSubmit={this.searchForTradeItems}>
-                    <label> League :
-                        <Select className="dropdown" options={this.state.leagues} onChange={this.handleOptionChange}/>
-                    </label>
-                    <label> Item Name :
-                        <AutoComplete items={this.state.items} setItemName={this.setItemName}/>
-                    </label><br/>
+                    <label style={TextStyle}> League : </label>
+                    <Select className="dropdown" options={this.state.leagues} onChange={this.handleOptionChange}/>
+                    <label style={TextStyle}> Item Name :</label><br/>
+                    <AutoComplete items={this.state.items} setItemName={this.setItemName}/>
                     <input name="submit" type="submit"/>
                 </form>
-                <TradeItemList tradeItems={this.state.tradeItems}/>
+                <TradeItemList tradeItems={this.state.tradeItems} currencies={this.state.currencies}/>
             </div>
         );
     }

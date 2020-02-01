@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../styles/App.css"
 export default class TradeItem extends React.Component {
 
     constructor(props) {
@@ -11,7 +11,10 @@ export default class TradeItem extends React.Component {
             <div>
                 <h4>{this.props.item.name}</h4>
                 <img src={this.props.item.imageUrl} alt={this.props.item.name}/>
-                <h5>{this.props.item.currencyAmount} {this.props.item.currency}</h5>
+                <span>
+                    <h5>{this.props.item.currencyAmount} </h5>
+                    <img className="currencyImage" src={this.props.currency.imageUrl}/>
+                </span>
             </div>
         );
     }
