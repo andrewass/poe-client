@@ -16,8 +16,9 @@ export default class TradeItemList extends React.Component {
         return (
             <div>
                 {this.props.tradeItems
-                    .map((tradeItem) => <TradeItem item={tradeItem}
-                                                   currency={this.findCurrencyForTradeItem(tradeItem.currency)}/>)}
+                    .map((tradeItem) =>
+                        <TradeItem item={tradeItem}
+                                   currency={this.findCurrencyForTradeItem(tradeItem.price.second.shortName)}/>)}
             </div>
         );
     }

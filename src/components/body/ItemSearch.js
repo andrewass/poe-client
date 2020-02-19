@@ -8,7 +8,7 @@ import {TextStyle} from "../../styles/styles";
 const URL = {
     trade_items: "http://localhost:8080/poe/trade-items",
     leagues: "http://localhost:8080/poe/leagues",
-    items: "http://localhost:8080/poe/items",
+    items: "http://localhost:8080/poe/available-items",
     currencies: "http://localhost:8080/poe/static-items"
 };
 
@@ -69,7 +69,7 @@ export default class ItemSearch extends React.Component {
     fillItemList(items) {
         let itemList = [];
         for (let i in items) {
-            itemList.push(items[i].itemName);
+            itemList.push(items[i]);
         }
         this.setState({items: itemList});
     }
